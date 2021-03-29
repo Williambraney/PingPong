@@ -8,7 +8,7 @@ const awardWinner = (state) => {
 const whoWins = (state) => {
     return {
         ...state,
-        winner: state.player1 >= 21 || state.player2 >= 21 ? awardWinner(state) : 0
+        winner: state.player1 >= state.winningScore || state.player2 >= state.winningScore ? awardWinner(state) : 0
     }
 }
 
@@ -27,7 +27,7 @@ const whoServes = (state) => {
     let total = state.player1 + state.player2 // total of points given
     return {
         ...state,
-        server: Math.floor(total / 5) % 2 ? 2 : 1, // this is an equation to change 2 to 1 every 5 serves
+        server: Math.floor(total / state.serveChange) % 2 ? 2 : 1, // this is an equation to change 2 to 1 every 5 serves
 
     }
 }
@@ -38,9 +38,9 @@ const save = (state, action) => {
         ...state,
         name1: name1,
         name2: name2,
-        serveChange: serveChange,
-        winningScore: winningScore,
-        showGame: true,
+        serveChange: serveChange ? serveChange : initial.serveChange,
+        winningScore: winningScore ? winningScore : initial.winningScore ,
+        showForm: false,
     }
 }
 // ones on the left are current state, ones on the right are from the action, 

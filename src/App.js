@@ -3,11 +3,20 @@ import Player2 from "./components/Player/Player2"
 import Winner from "./components/Winner"
 import Reset from "./components/Reset"
 import Form from "./components/Form"
+import {connect} from "react-redux"
 
 // App is a component which displays all the components that the App is made out of 
-const App = () => {
-  return (
-    <>
+
+const mapStateToProps = (state) => {
+  return {
+    showForm: state.showForm, // state.winner is from the initial component which stores intitial state
+    // state. winner is worked out from the reducer methods
+  };
+};
+
+const App = ({showForm}) => {
+  return showForm  ?
+    <Form /> : <>
     {/* header */}
     <header className="jumbotron mt-4 mb-0">
       <h1>PongPing</h1>
@@ -25,10 +34,7 @@ const App = () => {
 
     { /* reset button */}
     <Reset />
-
-    <Form />
-    </>
-  )
+  </>
 };
 
-export default App;
+export default connect(mapStateToProps)(App);

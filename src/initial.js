@@ -7,7 +7,7 @@ const initial = {
     name2: "",
     winningScore: 21,
     serveChange: 5,
-    showGame: false,
+    showForm: true,
 };
 // the initial state
 
