@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PingPong/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/PingPong/static/js/main.9857ffd2.chunk.js",
+    "main.js.map": "/PingPong/static/js/main.9857ffd2.chunk.js.map",
+    "runtime-main.js": "/PingPong/static/js/runtime-main.d08486cd.js",
+    "runtime-main.js.map": "/PingPong/static/js/runtime-main.d08486cd.js.map",
+    "static/js/2.9f57263b.chunk.js": "/PingPong/static/js/2.9f57263b.chunk.js",
+    "static/js/2.9f57263b.chunk.js.map": "/PingPong/static/js/2.9f57263b.chunk.js.map",
+    "static/js/3.4f49e579.chunk.js": "/PingPong/static/js/3.4f49e579.chunk.js",
+    "static/js/3.4f49e579.chunk.js.map": "/PingPong/static/js/3.4f49e579.chunk.js.map",
+    "index.html": "/PingPong/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/PingPong/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.9f57263b.chunk.js.LICENSE.txt": "/PingPong/static/js/2.9f57263b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d08486cd.js",
+    "static/js/2.9f57263b.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.9857ffd2.chunk.js"
+  ]
+}
